@@ -1,0 +1,379 @@
+[info] waiting for lock on /Users/tarunkumar/.sbt/boot/sbt.boot.lock to be available...
+[info] welcome to sbt 1.6.1 (Oracle Corporation Java 11.0.13)
+[info] loading global plugins from /Users/tarunkumar/.sbt/1.0/plugins
+[info] loading settings for project twitterproject-build from assembly.sbt ...
+[info] loading project definition from /Users/tarunkumar/SparkScalaCourse/twitterProject/project
+[info] loading settings for project twitter1 from build.sbt ...
+[info] set current project to twitterProject (in build file:/Users/tarunkumar/SparkScalaCourse/twitterProject/)
+[info] running SparkTwitter 
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_c50c0fea/target/411376cb/67342bd6/spark-unsafe_2.13-3.2.0.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
++-------------------+----------+--------------------+--------------------+
+|                 id|      date|                text|            location|
++-------------------+----------+--------------------+--------------------+
+|1483020299297771528|2022-01-17|rt @nice_matin: l...|rennes - républiq...|
+|1483020299155218434|2022-01-17|rt @michaelwarbur...|  treaty 13 tkaronto|
+|1483020298802933761|2022-01-17|rt @roryreckons: ...|  schrödinger’s box |
+|1483020298505138176|2022-01-17|rt @allisonpearso...| hammersmith, london|
+|1483020298383663104|2022-01-17|rt @karmaaainstan...|             unknown|
+|1483020298085711872|2022-01-17|@mkierwinski a cz...|             unknown|
+|1483020298026901506|2022-01-17|rt @francenews24:...|             unknown|
+|1483020297984950272|2022-01-17|rt @ninastratulat...|trentino-alto adi...|
+|1483020297888575490|2022-01-17|rt @roddreher: da...|           ohio, usa|
+|1483020297368444934|2022-01-17|rt @kgopinion: we...|      harper's ferry|
+|1483020296890519556|2022-01-17|@dorothy23897725 ...|              elwood|
+|1483020296668037122|2022-01-17|rt @mediavenir: ?...|             unknown|
+|1483020296592441352|2022-01-17|rt @simas_luiz: a...|             unknown|
+|1483020296517042176|2022-01-17|в красноярском кр...|         krasnoyarsk|
+|1483020296441503750|2022-01-17|rt @mediavenir: ?...|               paris|
+|1483020296336678913|2022-01-17|rt @zneveri: on t...|             unknown|
+|1483020296013721600|2022-01-17|rt @pia_lamberty:...|             unknown|
+|1483020295980081154|2022-01-17|rt @idrissaberkan...|             unknown|
+|1483020295887888384|2022-01-17|rt @phytaphix: it...|      louth, ireland|
+|1483020295883866114|2022-01-17|@chouhanshivraj m...|             bhopal |
+|1483020295799775233|2022-01-17|vocês ai que tao ...|rio de janeiro, b...|
+|1483020295283912709|2022-01-17|rt @michaelpsenge...|             unknown|
+|1483020294822543360|2022-01-17|@zzndu93 @krys791...|             unknown|
+|1483020294545494017|2022-01-17|https://t.co/myil...|             unknown|
+|1483020294327574529|2022-01-17|rt @hopestill17: ...|        brooklyn ny |
+|1483020294285451269|2022-01-17|rt @banglarshiksh...|kolkata / বাঁকুড়...|
+|1483020294113615876|2022-01-17|rt @davebrowntoon...|               കേരളം|
+|1483020293857763328|2022-01-17|@fatzdomingo @kiz...|scotland, united ...|
+|1483020293736124417|2022-01-17|passa 24 horas se...|             unknown|
+|1483020293715083265|2022-01-17|rt @coronamatome:...|             unknown|
+|1483020293383733250|2022-01-17|@machineguneye my...|                hell|
+|1483020293362831362|2022-01-17|rt @vanbasten1747...|          monte fuji|
+|1483020292335284229|2022-01-17|rt @danidelarosa:...|      burgos, españa|
+|1483020292213649410|2022-01-17|rt @bill_esterson...|              oxford|
+|1483020291915882497|2022-01-17|rt @bianet_eng: c...|      leuven, belgië|
++-------------------+----------+--------------------+--------------------+
+only showing top 35 rows
+
+3000
+[success] Total time: 66 s (01:06), completed 17-Jan-2022, 4:21:36 PM
+22/01/17 16:21:37 ERROR Configuration: error parsing conf core-default.xml
+java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_c50c0fea/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:849)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:838)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:168)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.getOrCreate(JarFileFactory.java:91)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:132)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:175)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2986)
+	at org.apache.hadoop.conf.Configuration.getStreamReader(Configuration.java:3082)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3040)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:3013)
+	at org.apache.hadoop.conf.Configuration.loadProps(Configuration.java:2893)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2875)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:1225)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1842)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1819)
+	at org.apache.hadoop.util.ShutdownHookManager.getShutdownTimeout(ShutdownHookManager.java:183)
+	at org.apache.hadoop.util.ShutdownHookManager.shutdownExecutor(ShutdownHookManager.java:145)
+	at org.apache.hadoop.util.ShutdownHookManager.access$300(ShutdownHookManager.java:65)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:102)
+Exception in thread "Thread-1" java.lang.RuntimeException: java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_c50c0fea/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3066)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:3013)
+	at org.apache.hadoop.conf.Configuration.loadProps(Configuration.java:2893)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2875)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:1225)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1842)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1819)
+	at org.apache.hadoop.util.ShutdownHookManager.getShutdownTimeout(ShutdownHookManager.java:183)
+	at org.apache.hadoop.util.ShutdownHookManager.shutdownExecutor(ShutdownHookManager.java:145)
+	at org.apache.hadoop.util.ShutdownHookManager.access$300(ShutdownHookManager.java:65)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:102)
+Caused by: java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_c50c0fea/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:849)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:838)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:168)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.getOrCreate(JarFileFactory.java:91)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:132)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:175)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2986)
+	at org.apache.hadoop.conf.Configuration.getStreamReader(Configuration.java:3082)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3040)
+	... 10 more
+[info] welcome to sbt 1.6.1 (Oracle Corporation Java 11.0.13)
+[info] loading global plugins from /Users/tarunkumar/.sbt/1.0/plugins
+[info] loading settings for project twitterproject-build from assembly.sbt ...
+[info] loading project definition from /Users/tarunkumar/SparkScalaCourse/twitterProject/project
+[info] loading settings for project twitter1 from build.sbt ...
+[info] set current project to twitterProject (in build file:/Users/tarunkumar/SparkScalaCourse/twitterProject/)
+[info] running SparkTwitter 
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_1b041656/target/411376cb/67342bd6/spark-unsafe_2.13-3.2.0.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
++-------------------+----------+--------------------+--------------------+
+|                 id|      date|                text|            location|
++-------------------+----------+--------------------+--------------------+
+|1483031567001964545|2022-01-17|rt @realcandaceo:...|   holly springs, nc|
+|1483031566855159813|2022-01-17|rt @galg____: isr...|             unknown|
+|1483031566800809988|2022-01-17|terpapar covid am...|             unknown|
+|1483031566624432133|2022-01-17|rt @gfiuza_oficia...|                  bh|
+|1483031566397890566|2022-01-17|γράφει ο πρώην υπ...|             unknown|
+|1483031566062395392|2022-01-17|rt @bill_esterson...|             unknown|
+|1483031566011879424|2022-01-17|rt @emmakennytv: ...|             unknown|
+|1483031564757913605|2022-01-17|i still get pisse...|                eire|
+|1483031564741066755|2022-01-17|rt @occupydemocra...|             unknown|
+|1483031564711874560|2022-01-17|ai  miei amici no...|         los angeles|
+|1483031563801661442|2022-01-17|west end house is...|         allston, ma|
+|1483031563319324675|2022-01-17|every adult in th...|          surrey, uk|
+|1483031563159887878|2022-01-17|rt @mediavenir: ?...|       paris, france|
+|1483031562715549701|2022-01-17|rt @vic_rollison:...|  townsville nth qld|
+|1483031562472103938|2022-01-17|rt @shomburg: mit...|       berlin x-berg|
+|1483031562195251203|2022-01-17|@b52malmet arizon...|next to the box o...|
+|1483031561696075783|2022-01-17|rt @gfiuza_oficia...|              brasil|
+|1483031561486352385|2022-01-17|hoje (17), faz um...|              brazil|
+|1483031560777515015|2022-01-17|rt @laralogan: it...|             unknown|
+|1483031560588828680|2022-01-17|rt @mary89299980:...|             unknown|
+|1483031560555311105|2022-01-17|rt @potus: if you...|             unknown|
+|1483031560454651906|2022-01-17|rt @calvinrobinso...| south east, england|
+|1483031560207192069|2022-01-17|📢self-isolation ...|royal borough of ...|
+|1483031560119103491|2022-01-17|la stima indipend...|                roma|
+|1483031560001626119|2022-01-17|@crochetal68 @mac...|             unknown|
+|1483031558562922498|2022-01-17|#mhp #tbmm grup t...|             unknown|
+|1483031558462197760|2022-01-17|rt @amydiehl: to ...|greater sacrament...|
+|1483031558374277124|2022-01-17|@prueba2222222 @h...|             unknown|
+|1483031558219272196|2022-01-17|rt @sight_insight...|             unknown|
+|1483031558189727745|2022-01-17|rt @parraga_lvbp:...|             unknown|
+|1483031557942165508|2022-01-17|we are now two ye...|littlehampton, we...|
+|1483031557481066503|2022-01-17|https://t.co/yx7k...|              indore|
+|1483031556683927553|2022-01-17|rt @implausiblebl...|  north west england|
+|1483031556528775169|2022-01-17|bon, je crois que...|              france|
+|1483031556201627656|2022-01-17|rt @prole53: tv c...|             unknown|
++-------------------+----------+--------------------+--------------------+
+only showing top 35 rows
+
+4000
+[success] Total time: 64 s (01:04), completed 17-Jan-2022, 4:41:30 PM
+22/01/17 16:41:31 ERROR Configuration: error parsing conf core-default.xml
+java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_1b041656/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:849)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:838)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:168)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.getOrCreate(JarFileFactory.java:91)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:132)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:175)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2986)
+	at org.apache.hadoop.conf.Configuration.getStreamReader(Configuration.java:3082)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3040)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:3013)
+	at org.apache.hadoop.conf.Configuration.loadProps(Configuration.java:2893)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2875)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:1225)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1842)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1819)
+	at org.apache.hadoop.util.ShutdownHookManager.getShutdownTimeout(ShutdownHookManager.java:183)
+	at org.apache.hadoop.util.ShutdownHookManager.shutdownExecutor(ShutdownHookManager.java:145)
+	at org.apache.hadoop.util.ShutdownHookManager.access$300(ShutdownHookManager.java:65)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:102)
+Exception in thread "Thread-1" java.lang.RuntimeException: java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_1b041656/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3066)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:3013)
+	at org.apache.hadoop.conf.Configuration.loadProps(Configuration.java:2893)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2875)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:1225)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1842)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1819)
+	at org.apache.hadoop.util.ShutdownHookManager.getShutdownTimeout(ShutdownHookManager.java:183)
+	at org.apache.hadoop.util.ShutdownHookManager.shutdownExecutor(ShutdownHookManager.java:145)
+	at org.apache.hadoop.util.ShutdownHookManager.access$300(ShutdownHookManager.java:65)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:102)
+Caused by: java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_1b041656/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:849)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:838)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:168)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.getOrCreate(JarFileFactory.java:91)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:132)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:175)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2986)
+	at org.apache.hadoop.conf.Configuration.getStreamReader(Configuration.java:3082)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3040)
+	... 10 more
+[info] welcome to sbt 1.6.1 (Oracle Corporation Java 11.0.13)
+[info] loading global plugins from /Users/tarunkumar/.sbt/1.0/plugins
+[info] loading settings for project twitterproject-build from assembly.sbt ...
+[info] loading project definition from /Users/tarunkumar/SparkScalaCourse/twitterProject/project
+[info] loading settings for project twitter1 from build.sbt ...
+[info] set current project to twitterProject (in build file:/Users/tarunkumar/SparkScalaCourse/twitterProject/)
+[info] running SparkTwitter 
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_d070bf2f/target/411376cb/67342bd6/spark-unsafe_2.13-3.2.0.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
++-------------------+----------+--------------------+--------------------+
+|                 id|      date|                text|            location|
++-------------------+----------+--------------------+--------------------+
+|1483031567001964545|2022-01-17|rt @realcandaceo:...|   holly springs, nc|
+|1483031566855159813|2022-01-17|rt @galg____: isr...|             unknown|
+|1483031566800809988|2022-01-17|terpapar covid am...|             unknown|
+|1483031566624432133|2022-01-17|rt @gfiuza_oficia...|                  bh|
+|1483031566397890566|2022-01-17|γράφει ο πρώην υπ...|             unknown|
+|1483031566062395392|2022-01-17|rt @bill_esterson...|             unknown|
+|1483031566011879424|2022-01-17|rt @emmakennytv: ...|             unknown|
+|1483031564757913605|2022-01-17|i still get pisse...|                eire|
+|1483031564741066755|2022-01-17|rt @occupydemocra...|             unknown|
+|1483031564711874560|2022-01-17|ai  miei amici no...|         los angeles|
+|1483031563801661442|2022-01-17|west end house is...|         allston, ma|
+|1483031563319324675|2022-01-17|every adult in th...|          surrey, uk|
+|1483031563159887878|2022-01-17|rt @mediavenir: ?...|       paris, france|
+|1483031562715549701|2022-01-17|rt @vic_rollison:...|  townsville nth qld|
+|1483031562472103938|2022-01-17|rt @shomburg: mit...|       berlin x-berg|
+|1483031562195251203|2022-01-17|@b52malmet arizon...|next to the box o...|
+|1483031561696075783|2022-01-17|rt @gfiuza_oficia...|              brasil|
+|1483031561486352385|2022-01-17|hoje (17), faz um...|              brazil|
+|1483031560777515015|2022-01-17|rt @laralogan: it...|             unknown|
+|1483031560588828680|2022-01-17|rt @mary89299980:...|             unknown|
+|1483031560555311105|2022-01-17|rt @potus: if you...|             unknown|
+|1483031560454651906|2022-01-17|rt @calvinrobinso...| south east, england|
+|1483031560207192069|2022-01-17|📢self-isolation ...|royal borough of ...|
+|1483031560119103491|2022-01-17|la stima indipend...|                roma|
+|1483031560001626119|2022-01-17|@crochetal68 @mac...|             unknown|
+|1483031558562922498|2022-01-17|#mhp #tbmm grup t...|             unknown|
+|1483031558462197760|2022-01-17|rt @amydiehl: to ...|greater sacrament...|
+|1483031558374277124|2022-01-17|@prueba2222222 @h...|             unknown|
+|1483031558219272196|2022-01-17|rt @sight_insight...|             unknown|
+|1483031558189727745|2022-01-17|rt @parraga_lvbp:...|             unknown|
+|1483031557942165508|2022-01-17|we are now two ye...|littlehampton, we...|
+|1483031557481066503|2022-01-17|https://t.co/yx7k...|              indore|
+|1483031556683927553|2022-01-17|rt @implausiblebl...|  north west england|
+|1483031556528775169|2022-01-17|bon, je crois que...|              france|
+|1483031556201627656|2022-01-17|rt @prole53: tv c...|             unknown|
++-------------------+----------+--------------------+--------------------+
+only showing top 35 rows
+
+6000
+[success] Total time: 80 s (01:20), completed 17-Jan-2022, 5:02:00 PM
+22/01/17 17:02:01 ERROR Configuration: error parsing conf core-default.xml
+java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_d070bf2f/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:849)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:838)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:168)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.getOrCreate(JarFileFactory.java:91)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:132)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:175)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2986)
+	at org.apache.hadoop.conf.Configuration.getStreamReader(Configuration.java:3082)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3040)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:3013)
+	at org.apache.hadoop.conf.Configuration.loadProps(Configuration.java:2893)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2875)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:1225)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1842)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1819)
+	at org.apache.hadoop.util.ShutdownHookManager.getShutdownTimeout(ShutdownHookManager.java:183)
+	at org.apache.hadoop.util.ShutdownHookManager.shutdownExecutor(ShutdownHookManager.java:145)
+	at org.apache.hadoop.util.ShutdownHookManager.access$300(ShutdownHookManager.java:65)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:102)
+Exception in thread "Thread-1" java.lang.RuntimeException: java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_d070bf2f/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3066)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:3013)
+	at org.apache.hadoop.conf.Configuration.loadProps(Configuration.java:2893)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2875)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:1225)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1842)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1819)
+	at org.apache.hadoop.util.ShutdownHookManager.getShutdownTimeout(ShutdownHookManager.java:183)
+	at org.apache.hadoop.util.ShutdownHookManager.shutdownExecutor(ShutdownHookManager.java:145)
+	at org.apache.hadoop.util.ShutdownHookManager.access$300(ShutdownHookManager.java:65)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:102)
+Caused by: java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_d070bf2f/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:849)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:838)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:168)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.getOrCreate(JarFileFactory.java:91)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:132)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:175)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2986)
+	at org.apache.hadoop.conf.Configuration.getStreamReader(Configuration.java:3082)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3040)
+	... 10 more

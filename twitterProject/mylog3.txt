@@ -1,0 +1,111 @@
+[info] waiting for lock on /Users/tarunkumar/.sbt/boot/sbt.boot.lock to be available...
+[info] welcome to sbt 1.6.1 (Oracle Corporation Java 11.0.13)
+[info] loading global plugins from /Users/tarunkumar/.sbt/1.0/plugins
+[info] loading settings for project twitterproject-build from assembly.sbt ...
+[info] loading project definition from /Users/tarunkumar/SparkScalaCourse/twitterProject/project
+[info] loading settings for project twitter1 from build.sbt ...
+[info] set current project to twitterProject (in build file:/Users/tarunkumar/SparkScalaCourse/twitterProject/)
+[info] running summary 
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_f1df0de0/target/411376cb/67342bd6/spark-unsafe_2.13-3.2.0.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
++--------+--------+--------+
+|location|    word|count_no|
++--------+--------+--------+
+| unknown|   covid|    5432|
+| unknown|covid-19|    1092|
+| unknown|    para|     642|
+| unknown|#covid19|     612|
+| unknown|  covid.|     590|
+| unknown|  people|     541|
+| unknown|  covid,|     530|
+| unknown|positive|     416|
+| unknown|   cases|     406|
+| unknown|   about|     357|
+| unknown| vaccine|     336|
+| unknown|    when|     310|
+| unknown|    been|     297|
+| unknown|    more|     287|
+| unknown| against|     275|
+| unknown|hospital|     265|
+| unknown|   their|     264|
+| unknown|   after|     264|
+| unknown|    días|     262|
+| unknown| because|     253|
++--------+--------+--------+
+only showing top 20 rows
+
+[success] Total time: 67 s (01:07), completed 17-Jan-2022, 5:26:35 PM
+22/01/17 17:26:36 ERROR Configuration: error parsing conf core-default.xml
+java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_f1df0de0/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:849)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:838)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:168)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.getOrCreate(JarFileFactory.java:91)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:132)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:175)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2986)
+	at org.apache.hadoop.conf.Configuration.getStreamReader(Configuration.java:3082)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3040)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:3013)
+	at org.apache.hadoop.conf.Configuration.loadProps(Configuration.java:2893)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2875)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:1225)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1842)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1819)
+	at org.apache.hadoop.util.ShutdownHookManager.getShutdownTimeout(ShutdownHookManager.java:183)
+	at org.apache.hadoop.util.ShutdownHookManager.shutdownExecutor(ShutdownHookManager.java:145)
+	at org.apache.hadoop.util.ShutdownHookManager.access$300(ShutdownHookManager.java:65)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:102)
+Exception in thread "Thread-1" java.lang.RuntimeException: java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_f1df0de0/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3066)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:3013)
+	at org.apache.hadoop.conf.Configuration.loadProps(Configuration.java:2893)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2875)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:1225)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1842)
+	at org.apache.hadoop.conf.Configuration.getTimeDuration(Configuration.java:1819)
+	at org.apache.hadoop.util.ShutdownHookManager.getShutdownTimeout(ShutdownHookManager.java:183)
+	at org.apache.hadoop.util.ShutdownHookManager.shutdownExecutor(ShutdownHookManager.java:145)
+	at org.apache.hadoop.util.ShutdownHookManager.access$300(ShutdownHookManager.java:65)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:102)
+Caused by: java.nio.file.NoSuchFileException: /Users/tarunkumar/SparkScalaCourse/twitterProject/target/bg-jobs/sbt_f1df0de0/target/9bf17411/2328f86a/hadoop-common-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:849)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:838)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:168)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.getOrCreate(JarFileFactory.java:91)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:132)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:175)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:2986)
+	at org.apache.hadoop.conf.Configuration.getStreamReader(Configuration.java:3082)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:3040)
+	... 10 more
